@@ -1,0 +1,23 @@
+[package]
+name = "yacht"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bevy =  {version = "0.6", features = ["mp3", "dynamic"]}
+bevy_audio = "0.6"
+bevy_core = "0.6"
+bevy_derive = "0.6"
+bevy_sprite = "0.6"
+derive_more = "0.99"
+rand = "0.8.5"
+bevy-inspector-egui = "0.9"
+confy = "0.4.0"
+serde = "1.0.136"
+
+[workspace]
+members=["src/*"]
+
+[[example]]
+name="test"
+path="src/test.rs"
